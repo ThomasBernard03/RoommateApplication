@@ -48,4 +48,16 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <PackageReference Include="Prism.DryIoc.Maui" Version="8.1.191-beta" />
+	  <PackageReference Include="Prism.Maui" Version="8.1.191-beta" />
+	  <PackageReference Include="ReactiveUI.Maui" Version="18.1.8" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\Pages\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
